@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>URK24CS1245 S S ATHIRA - Home Decor Ideas Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>URK24CS1245 S S ATHIRA</h1>
+        <h2>Home Decor Ideas Blog</h2>
+        <p>Transform Your House into a Beautiful Home!</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Decor Ideas</a>
+        <a href="#budget">Budget Calculator</a>
+        <a href="#shopping">Shopping</a>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="welcome">
+        <h2>Welcome to Home Decor Ideas</h2>
+
+        <p>
+            Discover creative interior designs, beautiful bedrooms,
+            furniture ideas and affordable home decoration tips.
+            Make your home look stylish and comfortable!
+        </p>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section id="gallery">
+        <h2>Home Decor Inspiration</h2>
+
+        <div class="gallery-container">
+
+            <div class="gallery-card">
+                <img src="./image/images.jpg" alt="Home Decor">
+                <h3>Beautiful Home Decor</h3>
+                <p>Creative ideas for decorating your home.</p>
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/interior.jpg" alt="Interior Design">
+                <h3>Modern Interior Design</h3>
+                <p>Explore modern and elegant interiors.</p>
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/bedroom.jpg" alt="Bedroom Design">
+                <h3>Comfortable Bedroom</h3>
+                <p>Create a peaceful and relaxing bedroom.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BUDGET CALCULATOR -->
+    <section id="budget">
+
+        <h2>Home Decor Budget Calculator</h2>
+
+        <p>Enter your total budget to calculate the amount for each category.</p>
+
+        <input
+            type="number"
+            id="budgetAmount"
+            placeholder="Enter your budget in ₹"
+            min="1"
+        >
+
+        <button id="evaluate">Calculate Budget</button>
+
+        <div id="budgetResult"></div>
+
+    </section>
+
+    <!-- SHOPPING BILL CALCULATOR -->
+    <section id="shopping">
+
+        <h2>Home Decor Shopping</h2>
+
+        <p>Select the quantity of products to calculate your total bill.</p>
+
+        <div class="product">
+            <span>Indoor Plant - ₹300</span>
+            <input type="number" class="qty" data-price="300" value="0" min="0">
+        </div>
+
+        <div class="product">
+            <span>Cushion Set - ₹500</span>
+            <input type="number" class="qty" data-price="500" value="0" min="0">
+        </div>
+
+        <div class="product">
+            <span>Table Lamp - ₹750</span>
+            <input type="number" class="qty" data-price="750" value="0" min="0">
+        </div>
+
+        <div class="product">
+            <span>Wall Art - ₹450</span>
+            <input type="number" class="qty" data-price="450" value="0" min="0">
+        </div>
+
+        <button id="order">Calculate Bill</button>
+
+        <h3 id="bill">Total: ₹0</h3>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 URK24CS1245 S S ATHIRA | Home Decor Ideas Blog</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
